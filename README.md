@@ -2,12 +2,12 @@
 
 ## Usage
 
-init 
+### init 
 ```sh
 pnpm i
 ```
 
-dev
+### start dev
 ```sh
 pnpm dev
 ```
