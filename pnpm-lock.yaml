@@ -6,7 +6,7 @@ specifiers:
   typescript: ^4.9.3
   vite: ^4.2.0
   vue: ~2.7.14
-  vue-template-compiler: '2'
+  vue-template-compiler: 2.7.14
   vue-tsc: ^1.2.0
 
 dependencies:
