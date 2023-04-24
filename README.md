@@ -199,6 +199,6 @@ pnpm run dev
 
 ## 参考文档
 
-[@vitejs/plugin-vue2](https://github.com/vitejs/vite-plugin-vue2)
-[vite](https://cn.vitejs.dev/guide/)
-[基于Vite创建一个Vue2项目](https://juejin.cn/post/7130924539067760677)
+* [@vitejs/plugin-vue2](https://github.com/vitejs/vite-plugin-vue2)
+* [vite](https://cn.vitejs.dev/guide/)
+* [基于Vite创建一个Vue2项目](https://juejin.cn/post/7130924539067760677)
