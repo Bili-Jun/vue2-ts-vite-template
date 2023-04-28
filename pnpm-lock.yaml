@@ -15,7 +15,6 @@ specifiers:
   vite-plugin-compression: ^0.5.1
   vite-plugin-externals: ^0.6.2
   vite-plugin-html: ^3.2.0
-  vite-plugin-resolve-externals: ^0.2.2
   vue: ~2.7.14
   vue-demi: ^0.14.0
   vue-template-compiler: 2.7.14
@@ -23,6 +22,7 @@ specifiers:
 
 dependencies:
   pinia: registry.npmmirror.com/pinia/2.0.35_hwpzsh6pnvsm3pjf2zi526hnzq
+  vue: registry.npmmirror.com/vue/2.7.14
   vue-demi: registry.npmmirror.com/vue-demi/0.14.0_vue@2.7.14
   vue-template-compiler: registry.npmmirror.com/vue-template-compiler/2.7.14
 
@@ -40,8 +40,6 @@ devDependencies:
   vite-plugin-compression: registry.npmmirror.com/vite-plugin-compression/0.5.1_vite@4.2.2
   vite-plugin-externals: registry.npmmirror.com/vite-plugin-externals/0.6.2_vite@4.2.2
   vite-plugin-html: registry.npmmirror.com/vite-plugin-html/3.2.0_vite@4.2.2
-  vite-plugin-resolve-externals: registry.npmmirror.com/vite-plugin-resolve-externals/0.2.2
-  vue: registry.npmmirror.com/vue/2.7.14
   vue-tsc: registry.npmmirror.com/vue-tsc/1.2.0_typescript@4.9.5
 
 packages:
@@ -3472,12 +3470,6 @@ packages:
       node-html-parser: registry.npmmirror.com/node-html-parser/5.4.2
       pathe: registry.npmmirror.com/pathe/0.2.0
       vite: registry.npmmirror.com/vite/4.2.2_eyy7nipdyx6ywyhabxu5kc6lqq
-    dev: true
-
-  registry.npmmirror.com/vite-plugin-resolve-externals/0.2.2:
-    resolution: {integrity: sha512-RHwCA5z+oGwxlqVSJq43qjphpImq8N44NwqjUVqK3aH13R1C4JJM7ApRtOmkfU2x/paN7kdSwf252VVfKEVsQw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vite-plugin-resolve-externals/-/vite-plugin-resolve-externals-0.2.2.tgz}
-    name: vite-plugin-resolve-externals
-    version: 0.2.2
     dev: true
 
   registry.npmmirror.com/vite/4.2.2_eyy7nipdyx6ywyhabxu5kc6lqq:
