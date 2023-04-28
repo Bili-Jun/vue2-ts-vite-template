@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@types/node': ^18.15.12
   '@vitejs/plugin-vue2': ^2.2.0
+  pinia: ^2.0.35
   typescript: ^4.9.3
   vite: ^4.2.0
   vue: ~2.7.14
@@ -10,6 +11,7 @@ specifiers:
   vue-tsc: ^1.2.0
 
 dependencies:
+  pinia: registry.npmmirror.com/pinia/2.0.35_hwpzsh6pnvsm3pjf2zi526hnzq
   vue: registry.npmmirror.com/vue/2.7.14
   vue-template-compiler: registry.npmmirror.com/vue-template-compiler/2.7.14
 
@@ -419,6 +421,12 @@ packages:
       '@vue/shared': registry.npmmirror.com/@vue/shared/3.2.47
     dev: true
 
+  registry.npmmirror.com/@vue/devtools-api/6.5.0:
+    resolution: {integrity: sha512-o9KfBeaBmCKl10usN4crU53fYtC1r7jJwdGKjPT24t348rHxgfpZ0xL3Xm/gLUYnc0oTp8LAmrxOeLyu6tbk2Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vue/devtools-api/-/devtools-api-6.5.0.tgz}
+    name: '@vue/devtools-api'
+    version: 6.5.0
+    dev: false
+
   registry.npmmirror.com/@vue/reactivity-transform/3.2.47:
     resolution: {integrity: sha512-m8lGXw8rdnPVVIdIFhf0LeQ/ixyHkH5plYuS83yop5n7ggVJU+z5v0zecwEnX7fa7HNLBhh2qngJJkxpwEEmYA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vue/reactivity-transform/-/reactivity-transform-3.2.47.tgz}
     name: '@vue/reactivity-transform'
@@ -587,6 +595,27 @@ packages:
     name: picocolors
     version: 1.0.0
 
+  registry.npmmirror.com/pinia/2.0.35_hwpzsh6pnvsm3pjf2zi526hnzq:
+    resolution: {integrity: sha512-P1IKKQWhxGXiiZ3atOaNI75bYlFUbRxtJdhPLX059Z7+b9Z04rnTZdSY8Aph1LA+/4QEMAYHsTQ638Wfe+6K5g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/pinia/-/pinia-2.0.35.tgz}
+    id: registry.npmmirror.com/pinia/2.0.35
+    name: pinia
+    version: 2.0.35
+    peerDependencies:
+      '@vue/composition-api': ^1.4.0
+      typescript: '>=4.4.4'
+      vue: ^2.6.14 || ^3.2.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+      typescript:
+        optional: true
+    dependencies:
+      '@vue/devtools-api': registry.npmmirror.com/@vue/devtools-api/6.5.0
+      typescript: registry.npmmirror.com/typescript/4.9.5
+      vue: registry.npmmirror.com/vue/2.7.14
+      vue-demi: registry.npmmirror.com/vue-demi/0.14.0_vue@2.7.14
+    dev: false
+
   registry.npmmirror.com/postcss/8.4.23:
     resolution: {integrity: sha512-bQ3qMcpF6A/YjR55xtoTr0jGOlnPOKAIMdOWiv0EIT6HVPEaJiJB4NLljSbiHoC2RX7DN5Uvjtpbg1NPdwv1oA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/postcss/-/postcss-8.4.23.tgz}
     name: postcss
@@ -656,7 +685,6 @@ packages:
     version: 4.9.5
     engines: {node: '>=4.2.0'}
     hasBin: true
-    dev: true
 
   registry.npmmirror.com/vite/4.2.2_@types+node@18.15.12:
     resolution: {integrity: sha512-PcNtT5HeDxb3QaSqFYkEum8f5sCVe0R3WK20qxgIvNBZPXU/Obxs/+ubBMeE7nLWeCo2LDzv+8hRYSlcaSehig==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vite/-/vite-4.2.2.tgz}
@@ -694,6 +722,24 @@ packages:
     optionalDependencies:
       fsevents: registry.npmmirror.com/fsevents/2.3.2
     dev: true
+
+  registry.npmmirror.com/vue-demi/0.14.0_vue@2.7.14:
+    resolution: {integrity: sha512-gt58r2ogsNQeVoQ3EhoUAvUsH9xviydl0dWJj7dabBC/2L4uBId7ujtCwDRD0JhkGsV1i0CtfLAeyYKBht9oWg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vue-demi/-/vue-demi-0.14.0.tgz}
+    id: registry.npmmirror.com/vue-demi/0.14.0
+    name: vue-demi
+    version: 0.14.0
+    engines: {node: '>=12'}
+    hasBin: true
+    requiresBuild: true
+    peerDependencies:
+      '@vue/composition-api': ^1.0.0-rc.1
+      vue: ^3.0.0-0 || ^2.6.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+    dependencies:
+      vue: registry.npmmirror.com/vue/2.7.14
+    dev: false
 
   registry.npmmirror.com/vue-template-compiler/2.7.14:
     resolution: {integrity: sha512-zyA5Y3ArvVG0NacJDkkzJuPQDF8RFeRlzV2vLeSnhSpieO6LK2OVbdLPi5MPPs09Ii+gMO8nY4S3iKQxBxDmWQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vue-template-compiler/-/vue-template-compiler-2.7.14.tgz}
