@@ -45,7 +45,15 @@ export const config: UserConfigExport = {
     minify: true,
     rollupOptions: {
       output: {
-        manualChunks: {
+        manualChunks(id) {
+          if (id.includes('node_modules')) {
+              return id.toString().split('node_modules/')[1].split('/')[0].toString();
+          }
+
+          if (id.indexOf('src/components') > -1) {
+            return 'common-components'
+          }
+          return
         }
       },
       plugins: [globals],
