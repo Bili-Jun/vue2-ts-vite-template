@@ -1,6 +1,6 @@
 import path from "node:path";
 import { defineConfig } from "vite";
-import vue from '@vitejs/plugin-vue2'
+import { createVuePlugin } from 'vite-plugin-vue2'
 import legacy from '@vitejs/plugin-legacy';
 import viteCompression from 'vite-plugin-compression';
 import { viteExternalsPlugin } from 'vite-plugin-externals'
@@ -10,17 +10,17 @@ import autoprefixer from 'autoprefixer'
 const externals = {
   vue: 'Vue',
   pinia: 'Pinia',
-  'vue-demi': 'VueDemi'
+  'vue-demi': 'VueDemi',
+  '@vue/composition-api': 'VueCompositionAPI'
 }
 
 let globals = externalGlobals(externals);
 
 const rollupOptionsExternal = Object.keys(externals)
 
-// https://vitejs.dev/config/
-export default defineConfig({
+export const config = {
   plugins: [
-    vue(),
+    createVuePlugin(),
     viteExternalsPlugin(externals),
     viteCompression(),
     legacy({
@@ -71,4 +71,7 @@ export default defineConfig({
       ],
     }
   }
-})
+}
+
+// https://vitejs.dev/config/
+export default defineConfig(config)

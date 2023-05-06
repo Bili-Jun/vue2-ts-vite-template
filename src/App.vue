@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <h2>Hello {{ user.name }}</h2>
+    <h2>Hello {{ user?.name }}</h2>
 
     <div style="margin: 1rem 0">
       <PiniaLogo />
@@ -34,7 +34,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted, ref } from 'vue'
+import { defineComponent, onMounted, ref } from '@vue/composition-api'
 import PiniaLogo from '@/components/PiniaLogo.vue'
 
 import { useUserStore } from './stores/user'
