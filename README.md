@@ -11,13 +11,13 @@ pnpm i
 ```sh
 pnpm dev
 ```
-### vue@2.x/legacy support
+### `vue@2.x`/legacy support
 
-### vue@2.7.x
+### `vue@2.7.x`
 
 [feature/vue-legacy-template](https://github.com/Bili-Jun/vue2-ts-vite-template/tree/feature/vue-legacy-template)
 
-### vue@2.6.x
+### `vue@2.6.x`
 
 [feature/low-vue-legacy-template](https://github.com/Bili-Jun/vue2-ts-vite-template/tree/feature/low-vue-legacy-template)
 
