@@ -22,7 +22,7 @@
     },
   },
   "vueCompilerOptions": {
-    "target": 2.7
+    "target": 2
   },
   "include": [
     "vite.config.*",

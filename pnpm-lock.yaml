@@ -7,6 +7,7 @@ specifiers:
   autoprefixer: ^10.4.14
   less: ^4.1.3
   pinia: ^2.0.35
+  rollup: ^3.21.5
   rollup-plugin-external-globals: ^0.7.3
   terser: ^5.17.1
   typescript: ^4.9.3
@@ -33,11 +34,12 @@ devDependencies:
   '@vitejs/plugin-legacy': registry.npmmirror.com/@vitejs/plugin-legacy/4.0.3_terser@5.17.1+vite@4.3.5
   autoprefixer: registry.npmmirror.com/autoprefixer/10.4.14
   less: registry.npmmirror.com/less/4.1.3
-  rollup-plugin-external-globals: registry.npmmirror.com/rollup-plugin-external-globals/0.7.3
+  rollup: registry.npmmirror.com/rollup/3.21.5
+  rollup-plugin-external-globals: registry.npmmirror.com/rollup-plugin-external-globals/0.7.3_rollup@3.21.5
   terser: registry.npmmirror.com/terser/5.17.1
   typescript: registry.npmmirror.com/typescript/4.9.5
   vite: registry.npmmirror.com/vite/4.3.5_q6alu5bx6wsdw6uraw356wvjdi
-  vite-plugin-cdn-import: registry.npmmirror.com/vite-plugin-cdn-import/0.3.5
+  vite-plugin-cdn-import: registry.npmmirror.com/vite-plugin-cdn-import/0.3.5_rollup@3.21.5
   vite-plugin-compression: registry.npmmirror.com/vite-plugin-compression/0.5.1_vite@4.3.5
   vite-plugin-externals: registry.npmmirror.com/vite-plugin-externals/0.6.2_vite@4.3.5
   vite-plugin-html: registry.npmmirror.com/vite-plugin-html/3.2.0_vite@4.3.5
@@ -1892,8 +1894,9 @@ packages:
       picomatch: registry.npmmirror.com/picomatch/2.3.1
     dev: true
 
-  registry.npmmirror.com/@rollup/pluginutils/5.0.2:
+  registry.npmmirror.com/@rollup/pluginutils/5.0.2_rollup@3.21.5:
     resolution: {integrity: sha512-pTd9rIsP92h+B6wWwFbW8RkZv4hiR/xKsqre4SIuAOaOEQRxi0lqLke9k2/7WegC85GgUs9pjmOjCUi3In4vwA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@rollup/pluginutils/-/pluginutils-5.0.2.tgz}
+    id: registry.npmmirror.com/@rollup/pluginutils/5.0.2
     name: '@rollup/pluginutils'
     version: 5.0.2
     engines: {node: '>=14.0.0'}
@@ -1906,6 +1909,7 @@ packages:
       '@types/estree': registry.npmmirror.com/@types/estree/1.0.1
       estree-walker: registry.npmmirror.com/estree-walker/2.0.2
       picomatch: registry.npmmirror.com/picomatch/2.3.1
+      rollup: registry.npmmirror.com/rollup/3.21.5
     dev: true
 
   registry.npmmirror.com/@types/estree/1.0.1:
@@ -3935,8 +3939,9 @@ packages:
     engines: {iojs: '>=1.0.0', node: '>=0.10.0'}
     dev: true
 
-  registry.npmmirror.com/rollup-plugin-external-globals/0.6.1:
+  registry.npmmirror.com/rollup-plugin-external-globals/0.6.1_rollup@3.21.5:
     resolution: {integrity: sha512-mlp3KNa5sE4Sp9UUR2rjBrxjG79OyZAh/QC18RHIjM+iYkbBwNXSo8DHRMZWtzJTrH8GxQ+SJvCTN3i14uMXIA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/rollup-plugin-external-globals/-/rollup-plugin-external-globals-0.6.1.tgz}
+    id: registry.npmmirror.com/rollup-plugin-external-globals/0.6.1
     name: rollup-plugin-external-globals
     version: 0.6.1
     peerDependencies:
@@ -3946,19 +3951,22 @@ packages:
       estree-walker: registry.npmmirror.com/estree-walker/2.0.2
       is-reference: registry.npmmirror.com/is-reference/1.2.1
       magic-string: registry.npmmirror.com/magic-string/0.25.9
+      rollup: registry.npmmirror.com/rollup/3.21.5
     dev: true
 
-  registry.npmmirror.com/rollup-plugin-external-globals/0.7.3:
+  registry.npmmirror.com/rollup-plugin-external-globals/0.7.3_rollup@3.21.5:
     resolution: {integrity: sha512-rOxtHUyIYR06kV2H5xhxIjbmdfQ7YGw/LUPFzxi9qwUqTqnbBUbZlVpkc5hs13b8KVO20Zkb+LzT2TGpJgRaIg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/rollup-plugin-external-globals/-/rollup-plugin-external-globals-0.7.3.tgz}
+    id: registry.npmmirror.com/rollup-plugin-external-globals/0.7.3
     name: rollup-plugin-external-globals
     version: 0.7.3
     peerDependencies:
       rollup: ^2.25.0 || ^3.3.0
     dependencies:
-      '@rollup/pluginutils': registry.npmmirror.com/@rollup/pluginutils/5.0.2
+      '@rollup/pluginutils': registry.npmmirror.com/@rollup/pluginutils/5.0.2_rollup@3.21.5
       estree-walker: registry.npmmirror.com/estree-walker/3.0.3
       is-reference: registry.npmmirror.com/is-reference/3.0.1
       magic-string: registry.npmmirror.com/magic-string/0.26.7
+      rollup: registry.npmmirror.com/rollup/3.21.5
     dev: true
 
   registry.npmmirror.com/rollup/2.79.1:
@@ -4209,12 +4217,13 @@ packages:
     version: 1.0.2
     dev: true
 
-  registry.npmmirror.com/vite-plugin-cdn-import/0.3.5:
+  registry.npmmirror.com/vite-plugin-cdn-import/0.3.5_rollup@3.21.5:
     resolution: {integrity: sha512-e1raoalfBiIhv+hnMeSp1UNjloDDBhHpeFxkwRRdPBmTdDRqdEEn8owUmT5u8UBSVCs4xN3n/od4a91vXEhXPQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vite-plugin-cdn-import/-/vite-plugin-cdn-import-0.3.5.tgz}
+    id: registry.npmmirror.com/vite-plugin-cdn-import/0.3.5
     name: vite-plugin-cdn-import
     version: 0.3.5
     dependencies:
-      rollup-plugin-external-globals: registry.npmmirror.com/rollup-plugin-external-globals/0.6.1
+      rollup-plugin-external-globals: registry.npmmirror.com/rollup-plugin-external-globals/0.6.1_rollup@3.21.5
     transitivePeerDependencies:
       - rollup
     dev: true

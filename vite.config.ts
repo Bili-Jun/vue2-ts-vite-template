@@ -1,9 +1,10 @@
 import path from "node:path";
-import { defineConfig } from "vite";
+import { defineConfig, UserConfigExport } from "vite";
 import { createVuePlugin } from 'vite-plugin-vue2'
 import legacy from '@vitejs/plugin-legacy';
 import viteCompression from 'vite-plugin-compression';
 import { viteExternalsPlugin } from 'vite-plugin-externals'
+import { InputPluginOption } from 'rollup'
 import externalGlobals from 'rollup-plugin-external-globals';
 import autoprefixer from 'autoprefixer'
 
@@ -14,11 +15,11 @@ const externals = {
   '@vue/composition-api': 'VueCompositionAPI'
 }
 
-let globals = externalGlobals(externals);
+let globals: InputPluginOption = externalGlobals(externals);
 
 const rollupOptionsExternal = Object.keys(externals)
 
-export const config = {
+export const config: UserConfigExport = {
   plugins: [
     createVuePlugin(),
     viteExternalsPlugin(externals),
