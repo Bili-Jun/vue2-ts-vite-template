@@ -1,7 +1,6 @@
 <template>
   <div class="main">
     <h2>Hello {{ user?.name }}</h2>
-
     <div style="margin: 1rem 0">
       <PiniaLogo />
     </div>
@@ -30,18 +29,25 @@
         Clear the cart
       </button>
     </form>
+    <Test>
+      <template #testContent="{ test }">{{test.a}}</template>
+    </Test>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent, onMounted, ref } from '@vue/composition-api'
 import PiniaLogo from '@/components/PiniaLogo.vue'
+import Test from '@/components/Test.vue'
 
 import { useUserStore } from './stores/user'
 import { useCartStore } from './stores/cart'
 
 export default defineComponent({
-  components: { PiniaLogo },
+  components: {
+    PiniaLogo,
+    Test
+  },
   setup() {
     const user = useUserStore()
     const cart = useCartStore()
@@ -79,7 +85,7 @@ export default defineComponent({
       cart,
       user,
       buy,
-      clearCart,
+      clearCart
     }
   },
 })
